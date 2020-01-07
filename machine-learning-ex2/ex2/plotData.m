@@ -11,14 +11,17 @@ figure; hold on;
 %               2D plot, using the option 'k+' for the positive
 %               examples and 'ko' for the negative examples.
 %
-pos = find(y == 1);
-neg = find(y == 0);
 
-% Plot Exam1 vs Exam2
+% Find indices
+pos = find(y == 1); neg = find(y == 0);
 
+%Plot exam 1 vs exam 2
 plot(X(pos,1),X(pos,2),'k+')
 plot(X(neg,1),X(neg,2),'ko')
-legend('In','Out')
+
+
+
+
 
 
 
@@ -32,3 +35,4 @@ legend('In','Out')
 hold off;
 
 end
+
